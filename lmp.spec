@@ -5,7 +5,7 @@ Version:	0.2.99.10
 Release:	1
 License:	GPL
 Group:		Applications/Math
-Source0:	ftp://lmp.sourceforge.net/pub/lmp/beta/%{name}_%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/lmp/%{name}_%{version}.tar.gz
 # Source0-md5:	8036254a8cf30ac9285fa1bd821ed51d
 URL:		http://lmp.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -56,7 +56,8 @@ Biblioteki statyczne LMP.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
