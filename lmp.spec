@@ -4,7 +4,7 @@ Name:		lmp
 Version:	0.2.99.10
 Release:	1
 License:	GPL
-Group:		Applications/Console
+Group:		Applications/Math
 Source0:	ftp://lmp.sourceforge.net/pub/lmp/beta/%{name}_%{version}.tar.gz
 URL:		http://lmp.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -60,8 +60,8 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
+%post	-p /sbin/ldconfig
+%postun	-p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
@@ -75,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/lib*.so
 %{_libdir}/lib*.la
 %{_includedir}/*
-%{_infodir}/*
+%{_infodir}/*.info*
 %{_mandir}/man3/*
 
 %files static
