@@ -1,4 +1,5 @@
 Summary:	L Math Processor
+Summary(pl):	Procesor matematyczny L
 Name:		lmp
 Version:	0.2.99.5
 Release:	1
@@ -6,7 +7,7 @@ License:	GPL
 Group:		Applications/Console
 Group(de):	Applikationen/Konsole
 Group(pl):	Aplikacje/Konsola
-Source0:	%{name}-%{version}.tar.gz
+Source0:	ftp://lmp.sourceforge.net/pub/lmp/beta/%{name}-%{version}.tar.gz
 URL:		http://lmp.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -16,21 +17,43 @@ mathematical solution of equations and terms just like the shell
 built-in 'expr'. But further lmp handles floating point numbers and
 knows some more operations.
 
+%description -l pl
+Procesor matematyczny L (LMP - L Math Processor) ma zaimplementowane
+wiele podstawowych sposobСw rozwi╠zywania rСwnaЯ, zachowuje siЙ
+podobnie do polecenia 'expr', ale obsЁuguje liczby zmiennoprzecinkowe
+i zna wiЙcej operacji.
+
 %package devel
-Summary:	Library, includes and API Manual
+Summary:	LMP includes and API Manual
+Summary(pl):	Pliki nagЁСwkowe LMP i dokumentacja API
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
+Group(es):	Desarrollo/Bibliotecas
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
+Group(pt_BR):	Desenvolvimento/Bibliotecas
+Group(ru):	Разработка/Библиотеки
+Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description devel
-The L math processor (lmp) implements many basic primitives for
-mathematical solution of equations and terms just like the shell
-built-in 'expr'. But further lmp handles floating point numbers and
-knows some more operations.
+This package contains LMP include files and other resources.
 
-This is the libraries, include files and other resources.
+%description devel -l pl
+Pliki nagЁСwkowe i inne do LMP.
+
+%package static
+Summary:	LMP static library
+Summary(pl):	Biblioteka statyczna LMP
+Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
+Group(es):	Desarrollo/Bibliotecas
+Group(fr):	Development/Librairies
+Group(pl):	Programowanie/Biblioteki
+Group(pt_BR):	Desenvolvimento/Bibliotecas
+Group(ru):	Разработка/Библиотеки
+Group(uk):	Розробка/Б╕бл╕отеки
+Requires:	%{name}-devel = %{version}
 
 %prep
 %setup -q
