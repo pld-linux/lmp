@@ -55,6 +55,12 @@ Group(ru):	Разработка/Библиотеки
 Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 
+%description static
+LMP static libraries.
+
+%description static -l pl
+Biblioteki statyczne LMP.
+
 %prep
 %setup -q
 
@@ -72,7 +78,7 @@ gzip -9nf CHANGES README
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post   -p /sbin/ldconfig
+%post -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
 
 %files
