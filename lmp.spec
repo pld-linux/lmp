@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Math
 Source0:	ftp://lmp.sourceforge.net/pub/lmp/beta/%{name}_%{version}.tar.gz
+# Source0-md5:	8036254a8cf30ac9285fa1bd821ed51d
 URL:		http://lmp.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
