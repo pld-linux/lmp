@@ -5,8 +5,6 @@ Version:	0.2.99.10
 Release:	1
 License:	GPL
 Group:		Applications/Console
-Group(de):	Applikationen/Konsole
-Group(pl):	Aplikacje/Konsola
 Source0:	ftp://lmp.sourceforge.net/pub/lmp/beta/%{name}_%{version}.tar.gz
 URL:		http://lmp.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -27,13 +25,6 @@ i zna wiЙcej operacji.
 Summary:	LMP includes and API Manual
 Summary(pl):	Pliki nagЁСwkowe LMP i dokumentacja API
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description devel
@@ -46,13 +37,6 @@ Pliki nagЁСwkowe i inne do LMP.
 Summary:	LMP static library
 Summary(pl):	Biblioteka statyczna LMP
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 
 %description static
