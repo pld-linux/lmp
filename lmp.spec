@@ -26,7 +26,7 @@ i zna wiêcej operacji.
 Summary:	LMP includes and API Manual
 Summary(pl):	Pliki nag³ówkowe LMP i dokumentacja API
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 This package contains LMP include files and other resources.
@@ -38,7 +38,7 @@ Pliki nag³ówkowe i inne do LMP.
 Summary:	LMP static library
 Summary(pl):	Biblioteka statyczna LMP
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 LMP static libraries.
