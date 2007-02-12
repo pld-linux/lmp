@@ -1,5 +1,5 @@
 Summary:	L Math Processor
-Summary(pl):	Procesor matematyczny L
+Summary(pl.UTF-8):   Procesor matematyczny L
 Name:		lmp
 Version:	0.2.99.10
 Release:	1
@@ -16,34 +16,34 @@ mathematical solution of equations and terms just like the shell
 built-in 'expr'. But further lmp handles floating point numbers and
 knows some more operations.
 
-%description -l pl
+%description -l pl.UTF-8
 Procesor matematyczny L (LMP - L Math Processor) ma zaimplementowane
-wiele podstawowych sposobów rozwi±zywania równañ, zachowuje siê
-podobnie do polecenia 'expr', ale obs³uguje liczby zmiennoprzecinkowe
-i zna wiêcej operacji.
+wiele podstawowych sposobÃ³w rozwiÄ…zywania rÃ³wnaÅ„, zachowuje siÄ™
+podobnie do polecenia 'expr', ale obsÅ‚uguje liczby zmiennoprzecinkowe
+i zna wiÄ™cej operacji.
 
 %package devel
 Summary:	LMP includes and API Manual
-Summary(pl):	Pliki nag³ówkowe LMP i dokumentacja API
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe LMP i dokumentacja API
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 This package contains LMP include files and other resources.
 
-%description devel -l pl
-Pliki nag³ówkowe i inne do LMP.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe i inne do LMP.
 
 %package static
 Summary:	LMP static library
-Summary(pl):	Biblioteka statyczna LMP
+Summary(pl.UTF-8):   Biblioteka statyczna LMP
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 LMP static libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteki statyczne LMP.
 
 %prep
