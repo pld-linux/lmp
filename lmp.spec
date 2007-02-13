@@ -1,5 +1,5 @@
 Summary:	L Math Processor
-Summary(pl.UTF-8):   Procesor matematyczny L
+Summary(pl.UTF-8):	Procesor matematyczny L
 Name:		lmp
 Version:	0.2.99.10
 Release:	1
@@ -24,7 +24,7 @@ i zna więcej operacji.
 
 %package devel
 Summary:	LMP includes and API Manual
-Summary(pl.UTF-8):   Pliki nagłówkowe LMP i dokumentacja API
+Summary(pl.UTF-8):	Pliki nagłówkowe LMP i dokumentacja API
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -36,7 +36,7 @@ Pliki nagłówkowe i inne do LMP.
 
 %package static
 Summary:	LMP static library
-Summary(pl.UTF-8):   Biblioteka statyczna LMP
+Summary(pl.UTF-8):	Biblioteka statyczna LMP
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
